@@ -3,9 +3,9 @@ import time
 if __name__ == "__main__":
     f = open("result.txt", "w")
     l = list()
-    start = time.time_ns()
+    start = time.time()
     for i in range(50001):
-        l.append([i, (time.time_ns() - start)/(10**9)])
+        l.append([i, time.time() - start])
 
     for e in l:
         f.write(str(e[0]) + " " + str(e[1]) + "\n")
