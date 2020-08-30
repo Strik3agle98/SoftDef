@@ -2,8 +2,8 @@ import time
 input_file = "random_large.txt"
 
 if __name__ == "__main__":
-    n = int(input())
-    fread = open(input_file, 'r')
+    n = int(input("n: "))
+    fread = open(input("input file: ").strip(), 'r')
     r = fread.read()
     fread.close()
     t_start = time.time()
